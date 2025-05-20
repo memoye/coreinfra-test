@@ -28,7 +28,7 @@ export function MonthlyIssuanceChart({ className }: { className?: string }) {
     <div className={className}>
       <DashboardDataContainer
         content={
-          <ChartContainer config={chartConfig}>
+          <ChartContainer className="" config={chartConfig}>
             <BarChart
               accessibilityLayer
               data={chartData}
