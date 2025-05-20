@@ -11,6 +11,10 @@ import ListIcon from "@/assets/icons/list.svg?react";
 import LayersThreeIcon from "@/assets/icons/layers-three.svg?react";
 import MapIcon from "@/assets/icons/map.svg?react";
 import UserIcon from "@/assets/icons/user.svg?react";
+import CreditCardShield from "@/assets/icons/credit-card-shield.svg?react";
+import CreditCard2 from "@/assets/icons/credit-card-2.svg?react";
+import CreditCardEdit from "@/assets/icons/credit-card-edit.svg?react";
+import CreditCardPlus from "@/assets/icons/credit-card-plus.svg?react";
 
 export const navData = {
   main: [
@@ -81,3 +85,26 @@ export const navData = {
     },
   ],
 };
+
+export const quickAccessLinks = [
+  {
+    title: "Manage a Card",
+    url: "/cards",
+    icon: CreditCardShield,
+  },
+  {
+    title: "Issue Instant Card",
+    url: "/cards/issue",
+    icon: CreditCard2,
+  },
+  {
+    title: "Issue Personalized Card",
+    url: "/cards",
+    icon: CreditCardEdit,
+  },
+  {
+    title: "Review Card Requests",
+    url: "/cards",
+    icon: CreditCardPlus,
+  },
+];
