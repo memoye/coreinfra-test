@@ -8,7 +8,7 @@ export function QuickAccessLinks({ className }: { className?: string }) {
   return (
     <section className={cn("bg-card rounded-lg border p-3.5", className)}>
       <h2 className="mb-3.5 text-base">Your Quick Access</h2>
-      <ul className="grid gap-2 md:grid-cols-2 lg:grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]">
+      <ul className="grid gap-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
         {quickAccessLinks.map((q, key) => (
           <li key={key}>
             <Button

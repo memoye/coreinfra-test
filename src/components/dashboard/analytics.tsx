@@ -54,7 +54,7 @@ export function Analytics({ className }: { className?: string }) {
         <h2 className="text-foreground text-lg font-bold">Analytics</h2>
         <div className="bg-input h-[0.5px] flex-1" />
       </div>
-      <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-[repeat(auto-fit,_minmax(260px,_1fr))]">
+      <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
         {analytics.map((a) => (
           <AnalyticCard
             key={a.id}
