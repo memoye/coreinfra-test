@@ -1,54 +1,103 @@
-# React + TypeScript + Vite
+# CoreInfra Test Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application built with Vite and TypeScript showcasing various UI components and features.
 
-Currently, two official plugins are available:
+Demo: [https://coreinfra-test.vercel.app/](https://coreinfra-test.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework:** React 19
+- **Build Tool:** Vite 6
+- **Language:** TypeScript
+- **Styling:** TailwindCSS 4
+- **Routing:** TanStack Router
+- **UI Components:**
+  - Radix UI (for accessible components)
+  - Recharts (for charts and data visualization)
+  - React Day Picker
+  - Lucide React Icons
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js 18.18.0 or higher
+- PNPM package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/memoye/coreinfra-test.git
+cd coreinfra-test
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+pnpm install
 ```
+
+### Development
+
+Run the development server:
+
+```bash
+pnpm dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### Build
+
+Create a production build:
+
+```bash
+pnpm build
+```
+
+### Preview Production Build
+
+To preview the production build locally:
+
+```bash
+pnpm preview
+```
+
+## Features
+
+- Modern React features with TypeScript support
+- File-based routing with TanStack Router
+- Component library built on Radix UI primitives
+- Responsive design with TailwindCSS
+- Data visualization with Recharts
+- SVG icon support with SVGR
+- Hot Module Replacement (HMR) in development
+
+## Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Create production build
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint for code linting
+
+## Environment Variables
+
+N/A
+
+## Deployment
+
+This project is deployed on Vercel. For deployment:
+
+1. Push your changes to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically build and deploy your changes
+
+## Acknowledgments
+
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [TanStack Router](https://tanstack.com/router)
