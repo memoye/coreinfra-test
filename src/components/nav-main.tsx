@@ -46,7 +46,6 @@ export function NavMain({
             <SidebarMenuButton
               data-active={pathname.startsWith(item.url!)}
               asChild
-              className="data-[active=true]:bg-sidebar-primary data-[active=true]:text-sidebar-primary-foreground data-[active=true]:border-sidebar-border px-3 py-2.5 text-xs"
             >
               <Link to={item.url}>
                 {item?.icon && <item.icon />}
