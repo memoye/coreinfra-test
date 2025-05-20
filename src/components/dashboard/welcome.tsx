@@ -46,7 +46,7 @@ export default function Welcome({ name = "there", className }: WelcomeProps) {
   const displayDate = lastLogin || lastRefresh;
 
   return (
-    <section className={cn("text-foreground", className)}>
+    <section className={cn("text-foreground mb-3.5", className)}>
       <h1 className="mb-1.5 text-lg font-bold">
         Hi {name}, what would you like to do today?
       </h1>
