@@ -18,7 +18,7 @@ import { Link } from "@tanstack/react-router";
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      {/* <SidebarHeader className="mt-6 mb-4">
+      <SidebarHeader className="mt-6 mb-4">
         <Link to="/">
           <img
             src="/logos/lapo.png"
@@ -27,7 +27,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             height={45}
           />
         </Link>
-      </SidebarHeader> */}
+      </SidebarHeader>
 
       <SidebarContent>
         <NavMain title="MAIN MENU" items={data.main} />

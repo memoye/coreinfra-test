@@ -3,5 +3,29 @@
     "name": "Nazeer",
     "email": "nazeer@example.com",
     "imageUrl": null
-  }
+  },
+  "weeklyIncome": [
+    { "day": "Mon", "income": 50 },
+    { "day": "Tue", "income": 28 },
+    { "day": "Wed", "income": 37 },
+    { "day": "Thu", "income": 37 },
+    { "day": "Fri", "income": 59 },
+    { "day": "Sat", "income": 20 },
+    { "day": "Sun", "income": 78 }
+  ],
+  "monthlyIssuance": [
+    { "month": "May", "personalized": 10, "instant": 40 },
+    { "month": "Jun", "personalized": 23, "instant": 72 },
+    { "month": "Jul", "personalized": 5, "instant": 30 },
+    { "month": "Aug", "personalized": 7, "instant": 60 },
+    { "month": "Sep", "personalized": 18, "instant": 82 },
+    { "month": "Oct", "personalized": 8, "instant": 75 }
+  ],
+  "cardStatusDistribution": [
+    { "status": "active", "cards": 1911, "fill": "#01A4AF" },
+    { "status": "expired", "cards": 294, "fill": "#FFBA24" },
+    { "status": "inactive", "cards": 125, "fill": "#014DAF" },
+    { "status": "blocked", "cards": 70, "fill": "#8020E7" },
+    { "status": "lost", "cards": 50, "fill": "#FF4457" }
+  ]
 }

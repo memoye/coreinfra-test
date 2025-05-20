@@ -29,7 +29,7 @@ export function DateRangeSelect({
             id="date"
             variant={"outline"}
             className={cn(
-              "h-[1.875rem]! w-fit justify-start border py-2 text-left text-xs font-normal",
+              "h-[1.875rem]! w-fit justify-start border py-2 text-left text-[11px] font-normal",
               !date && "text-muted-foreground",
             )}
           >
