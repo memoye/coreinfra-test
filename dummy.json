@@ -19,7 +19,8 @@
     { "month": "Jul", "personalized": 5, "instant": 30 },
     { "month": "Aug", "personalized": 7, "instant": 60 },
     { "month": "Sep", "personalized": 18, "instant": 82 },
-    { "month": "Oct", "personalized": 8, "instant": 75 }
+    { "month": "Oct", "personalized": 20, "instant": 64 },
+    { "month": "Nov", "personalized": 8, "instant": 75 }
   ],
   "cardStatusDistribution": [
     { "status": "active", "cards": 1911, "fill": "#01A4AF" },
