@@ -53,9 +53,9 @@ export function CardStatusDistributionChart({
         content={
           <ChartContainer
             config={chartConfig}
-            className="mx-auto aspect-square max-h-[250px]"
+            className="mx-auto aspect-square max-h-[300px]"
           >
-            <PieChart>
+            <PieChart width={210} height={210}>
               <ChartTooltip
                 cursor={false}
                 content={<ChartTooltipContent hideLabel />}
@@ -64,8 +64,8 @@ export function CardStatusDistributionChart({
                 data={chartData}
                 dataKey="cards"
                 nameKey="status"
-                innerRadius={70}
-                outerRadius={80}
+                innerRadius={80}
+                outerRadius={90}
                 paddingAngle={1}
                 cornerRadius={4}
                 stroke="none"

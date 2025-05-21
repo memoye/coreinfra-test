@@ -30,8 +30,8 @@ export function Dashboard() {
         </div>
 
         <div className="flex flex-1 flex-col-reverse gap-2 max-md:mt-5 md:min-w-[300px] md:flex-col">
-          <CardRequestTable className="flex-1" />
-          <CardStatusDistributionChart />
+          <CardRequestTable />
+          <CardStatusDistributionChart className="flex-1" />
         </div>
       </div>
     </div>

@@ -31,7 +31,10 @@ export function WeeklyIncomeChart({ className }: { className?: string }) {
         title="Weekly Income"
         className="pb-10"
         content={
-          <ChartContainer config={chartConfig}>
+          <ChartContainer
+            config={chartConfig}
+            className="h-64 w-[calc(100%-2rem)]"
+          >
             <LineChart
               data={chartData}
               margin={{
@@ -39,7 +42,6 @@ export function WeeklyIncomeChart({ className }: { className?: string }) {
                 right: 12,
               }}
             >
-              {/* Inject SVG filter definition */}
               <Customized
                 component={() => (
                   <defs>
@@ -87,11 +89,11 @@ export function WeeklyIncomeChart({ className }: { className?: string }) {
               <Line
                 dataKey="income"
                 type="natural"
-                stroke="var(--color-income)" // You can also just use "#4DAF01"
+                stroke="var(--color-income)"
                 strokeWidth={2}
                 dot={false}
                 strokeLinecap="round"
-                filter="url(#shadow)" // ✅ Apply the shadow
+                filter="url(#shadow)"
               />
             </LineChart>
           </ChartContainer>

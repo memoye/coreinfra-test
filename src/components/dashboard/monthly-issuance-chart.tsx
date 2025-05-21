@@ -28,13 +28,11 @@ export function MonthlyIssuanceChart({ className }: { className?: string }) {
     <div className={className}>
       <DashboardDataContainer
         content={
-          <ChartContainer className="" config={chartConfig}>
-            <BarChart
-              accessibilityLayer
-              data={chartData}
-              innerRadius={100}
-              outerRadius={100}
-            >
+          <ChartContainer
+            config={chartConfig}
+            className="h-80 w-[calc(100%-2rem)]"
+          >
+            <BarChart accessibilityLayer data={chartData}>
               <CartesianGrid vertical={false} />
               <YAxis
                 dataKey="instant"
@@ -64,6 +62,7 @@ export function MonthlyIssuanceChart({ className }: { className?: string }) {
                 stackId="a"
                 fill="var(--color-personalized)"
                 radius={[4, 4, 0, 0]}
+                barSize={40}
               />
 
               <Bar
@@ -71,6 +70,7 @@ export function MonthlyIssuanceChart({ className }: { className?: string }) {
                 stackId="a"
                 fill="var(--color-instant)"
                 radius={[8, 8, 0, 0]}
+                barSize={40}
               />
             </BarChart>
           </ChartContainer>
