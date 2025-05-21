@@ -24,6 +24,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { DashboardDataContainer } from "./dashboard-data-container";
+import dummyData from "../../../dummy.json";
 
 type Request = {
   id: number;
@@ -33,36 +34,7 @@ type Request = {
   status: "ready" | "in progress" | "acknowleged" | "pending";
 };
 
-const data: Request[] = [
-  {
-    id: 1,
-    branch: "Corporate",
-    cardType: "Instant",
-    quantity: 10,
-    status: "ready",
-  },
-  {
-    id: 2,
-    branch: "Corporate",
-    cardType: "Personalized",
-    quantity: 10,
-    status: "in progress",
-  },
-  {
-    id: 3,
-    branch: "Corporate",
-    cardType: "Personalized",
-    status: "acknowleged",
-    quantity: 10,
-  },
-  {
-    id: 4,
-    branch: "Corporate",
-    cardType: "Instant",
-    status: "pending",
-    quantity: 10,
-  },
-];
+const data = dummyData.cardRequests as Request[];
 
 const columns: ColumnDef<Request>[] = [
   {

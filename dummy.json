@@ -14,13 +14,13 @@
     { "day": "Sun", "income": 78 }
   ],
   "monthlyIssuance": [
-    { "month": "May", "personalized": 10, "instant": 40 },
-    { "month": "Jun", "personalized": 23, "instant": 72 },
-    { "month": "Jul", "personalized": 5, "instant": 30 },
-    { "month": "Aug", "personalized": 7, "instant": 60 },
-    { "month": "Sep", "personalized": 18, "instant": 82 },
-    { "month": "Oct", "personalized": 20, "instant": 64 },
-    { "month": "Nov", "personalized": 8, "instant": 75 }
+    { "month": "May", "instant": 40, "personalized": 10 },
+    { "month": "Jun", "instant": 72, "personalized": 23 },
+    { "month": "Jul", "instant": 30, "personalized": 5 },
+    { "month": "Aug", "instant": 60, "personalized": 7 },
+    { "month": "Sep", "instant": 82, "personalized": 18 },
+    { "month": "Oct", "instant": 64, "personalized": 20 },
+    { "month": "Nov", "instant": 75, "personalized": 8 }
   ],
   "cardStatusDistribution": [
     { "status": "active", "cards": 1911, "fill": "#01A4AF" },
@@ -28,5 +28,35 @@
     { "status": "inactive", "cards": 125, "fill": "#014DAF" },
     { "status": "blocked", "cards": 70, "fill": "#8020E7" },
     { "status": "lost", "cards": 50, "fill": "#FF4457" }
+  ],
+  "cardRequests": [
+    {
+      "id": 1,
+      "branch": "Corporate",
+      "cardType": "Instant",
+      "quantity": 10,
+      "status": "ready"
+    },
+    {
+      "id": 2,
+      "branch": "Corporate",
+      "cardType": "Personalized",
+      "quantity": 10,
+      "status": "in progress"
+    },
+    {
+      "id": 3,
+      "branch": "Corporate",
+      "cardType": "Personalized",
+      "status": "acknowleged",
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "branch": "Corporate",
+      "cardType": "Instant",
+      "status": "pending",
+      "quantity": 10
+    }
   ]
 }
